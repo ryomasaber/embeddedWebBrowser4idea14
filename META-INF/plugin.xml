@@ -11,7 +11,8 @@
 
   <!-- 插件的描述 -->
   <description><![CDATA[
-      Embedded Web Browser for IDEA14
+      Embedded Web Browser for IDEA14,
+      Source from https://github.com/chocotan/webbrowser4idea
     ]]></description>
 
   <!-- 插件版本变更信息，支持HTML标签；
