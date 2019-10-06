@@ -1,0 +1,54 @@
+<idea-plugin version="2">
+  <!-- 插件唯一id，不能和其他插件项目重复，所以推荐使用com.xxx.xxx的格式
+       插件不同版本之间不能更改，若没有指定，则与插件名称相同 -->
+  <id>com.saber</id>
+  <!-- 插件名称，别人在官方插件库搜索你的插件时使用的名称 -->
+  <name>Embedded Web Browser for IDEA14</name>
+  <!-- 插件版本 -->
+  <version>1.0</version>
+  <!-- 供应商主页和email-->
+  <vendor email="ryomasaber@gmail.com" url="">RyomaSaber</vendor>
+
+  <!-- 插件的描述 -->
+  <description><![CDATA[
+      Embedded Web Browser for IDEA14
+    ]]></description>
+
+  <!-- 插件版本变更信息，支持HTML标签；
+       将展示在 settings | Plugins 对话框和插件仓库的Web页面 -->
+  <change-notes><![CDATA[
+      1. Ignore untrusted ssl certificates.<br>
+      2. Support for Version 14.<br>
+    ]]>
+  </change-notes>
+
+  <!-- 插件兼容IDEA的最大和最小 build 号，两个属性可以任选一个或者同时使用
+       官网详细介绍：please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products-->
+  <!-- 插件所依赖的其他插件的id -->
+  <depends>com.intellij.modules.lang</depends>
+
+
+  <!-- 声明该插件对IDEA core或其他插件的扩展 -->
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <toolWindow id="Embedded Web Browser" anchor="right" factoryClass="com.saber.BrowserWindowFactory"/>
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
