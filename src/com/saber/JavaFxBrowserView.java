@@ -100,7 +100,7 @@ public class JavaFxBrowserView implements BrowserView {
                     @Override
                     public void changed(ObservableValue<? extends Worker.State> ov, Worker.State oldState, Worker.State newState) {
                         //设置暗黑模式 todo 如果页面上是字是黑色的则会看不清
-//                        webEngine.setUserStyleSheetLocation(getClass().getResource("/style/style.css").toString());
+                        webEngine.setUserStyleSheetLocation(getClass().getResource("/style/style.css").toString());
                         consumer.accept(webEngine.getLocation());
                     }
                 });
