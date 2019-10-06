@@ -25,7 +25,3 @@ hs_err_pid*
 
 /.idea/
 /embeddedWebBrowser4idea14.iml
-.gitignore
-.idea/
-embeddedWebBrowser4idea14.iml
-!/.gitignore
